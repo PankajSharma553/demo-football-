@@ -28,101 +28,100 @@
 
 <body>
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg">
+    <header class="header">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center logo-link" href="/">
-
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="./">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="playing-guide.html">Playing Guide</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="leagues.html">Play Now
+            <div class="header_wrapper">
+                <div class="header_left">
+                    <div class="header_logo">
+                        <a href="/" class="header_logoLnk">
+                            <div class="header_logoLnkIcon">
+                            </div>
                         </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="about-us.html">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="contact-us.html">Contact</a>
-                    </li>
-                </ul>
-
-                <div>
-                    <ul class="header_right">
-                     <li class="nav-item">
-                         <a class="nav-link  custom-btn" href="login.html">Login</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link click-scroll custom-btn" href="signup.html">Sign up</a>
-                     </li>
+                    </div>
+                </div>
+                <div class="header_navbar">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="/" class="header_link">Home</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="playing-guide.html" class="header_link">Playing Guide</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="leagues.html" class="header_link">Play Now</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">About Us</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">Contact Us</a>
+                        </li>
                     </ul>
-                 </div>
-                 <div class="profile">
-                     <div class="avatar">
-                         <div class="avatar-content">
-                             <a href="#">
-                                 <div class="profile-image">
-                                     <img src="assets/images/user.png" alt="profile">
-                                 </div>
-                                 <span>User Name</span>
-                             </a>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                 <path
-                                     d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
-                                 </path>
-                             </svg>
-                         </div>
-                         <div class="dropdown">
-                             <ul>
-                                 <li>
-                                     <a href="my-profile">
-                                         <div class="profile-dropdown-options profile-image-dropdown">
-                                             <img src="assets/images/user.png">
-                                         </div>
-                                         My Profile
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="my-matches">
-                                         <div class="profile-dropdown-options profile-image-stadium" style="background-image: url(assets/images/stadium.png);">
- 
-                                            
-                                         </div>
-                                         My Matches
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">
-                                         <div class="profile-dropdown-options profile-image-logout" style="background-image: url(assets/images/shutdown.png);">
-                                            
-                                         </div>
-                                         Log Out
-                                     </a>
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
-                 </div>
+                </div>
+
+                <div class="header_right">
+
+                    <ul class="header_rightList">
+                        <li class="">
+                            <a class="header_link custom-btn" href="login.html">Login</a>
+                        </li>
+                        <li class="">
+                            <a class="header_link custom-btn" href="signup.html">Sign up</a>
+                        </li>
+                    </ul>
+
+                    <div class="profile">
+                        <div class="avatar">
+                            <div class="avatar-content">
+                                <a href="#">
+                                    <div class="profile-image">
+                                        <img src="assets/images/user.png" alt="profile">
+                                    </div>
+                                    <span>User Name</span>
+                                </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="my-profile">
+                                            <div class="profile-dropdown-options profile-image-dropdown">
+
+                                            </div>
+                                            My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="my-matches">
+                                            <div class="profile-dropdown-options profile-image-stadium">
+
+                                            </div>
+                                            My Matches
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="profile-dropdown-options profile-image-logout">
+                                            </div>
+                                            Log Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
         </div>
-    </nav>
+    </header>
 
 
     <!-- Login Page  -->
