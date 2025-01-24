@@ -28,101 +28,102 @@
 <body>
 
     <!-- header section -->
-    <nav class="navbar navbar-expand-lg">
+    <header class="header">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center logo-link" href="/">
-
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="./">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="playing-guide.html">Playing Guide</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="leagues.html">Play Now
+            <div class="header_wrapper">
+                <div class="header_left">
+                    <div class="header_logo">
+                        <a href="#" class="header_logoLnk">
+                            <div class="header_logoLnkIcon">
+                            </div>
                         </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="about-us.html">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="contact-us.html">Contact</a>
-                    </li>
-                </ul>
-
-                <div>
-                    <ul class="header_right">
-                     <li class="nav-item">
-                         <a class="nav-link  custom-btn" href="login.html">Login</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link click-scroll custom-btn" href="signup.html">Sign up</a>
-                     </li>
+                    </div>
+                </div>
+                <div class="header_navbar">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#" class="header_link">Home</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">Playing Guide</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">Play Now</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">About Us</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">Contact Us</a>
+                        </li>
                     </ul>
-                 </div>
-                 <div class="profile">
-                     <div class="avatar">
-                         <div class="avatar-content">
-                             <a href="#">
-                                 <div class="profile-image">
-                                     <img src="assets/images/user.png" alt="profile">
-                                 </div>
-                                 <span>User Name</span>
-                             </a>
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                 <path
-                                     d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
-                                 </path>
-                             </svg>
-                         </div>
-                         <div class="dropdown">
-                             <ul>
-                                 <li>
-                                     <a href="my-profile">
-                                         <div class="profile-dropdown-options profile-image-dropdown">
-                                             <img src="assets/images/user.png">
-                                         </div>
-                                         My Profile
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="my-matches">
-                                         <div class="profile-dropdown-options profile-image-stadium" style="background-image: url(assets/images/stadium.png);">
- 
-                                            
-                                         </div>
-                                         My Matches
-                                     </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">
-                                         <div class="profile-dropdown-options profile-image-logout" style="background-image: url(assets/images/shutdown.png);">
-                                            
-                                         </div>
-                                         Log Out
-                                     </a>
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
-                 </div>
+                </div>
+
+                <div class="header_right">
+
+                    <ul class="header_rightList">
+                        <li class="">
+                            <a class="header_link custom-btn" href="login.html">Login</a>
+                        </li>
+                        <li class="">
+                            <a class="header_link custom-btn" href="signup.html">Sign up</a>
+                        </li>
+                    </ul>
+
+                    <div class="profile">
+                        <div class="avatar">
+                            <div class="avatar-content">
+                                <a href="#">
+                                    <div class="profile-image">
+                                        <img src="assets/images/user.png" alt="profile">
+                                    </div>
+                                    <span>User Name</span>
+                                </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="my-profile">
+                                            <div class="profile-dropdown-options profile-image-dropdown">
+
+                                            </div>
+                                            My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="my-matches">
+                                            <div class="profile-dropdown-options profile-image-stadium">
+
+                                            </div>
+                                            My Matches
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="profile-dropdown-options profile-image-logout">
+                                            </div>
+                                            Log Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
         </div>
-    </nav>
+    </header>
+
+
     <!--Leagues Pages Banner Section Start -->
     <section class="pages-banner leagues-pages  bg-cover bg-no-repeat banner matchDtls_banner">
         <div class="container">
@@ -144,197 +145,271 @@
     </section>
 
     <!-- Leagues Content Section Start -->
-    <section class="basket_leagues match-details-page  match-details">
+    <div class="basket_leagues matches-detail">
         <div class="container">
             <div class="basket_leagues-inner">
                 <div class="back-btn">
-                    <a href="my-matches" class="back-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#fff">
-                            <path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z" />
-                        </svg>
+                    <a href="matches">
+                        <img src="assets/images/arrow-left.png" alt="arrow-left">
                     </a>
                 </div>
-                <!-- Component Start -->
-                <h1 class="text-center heading-center">
-                    My Players
-                </h1>
+                <h2 class="text-center heading-center">2025-26 Season</h2>
+                <ul class="leagues_lists">
+                    <li class="league_item">
+                        <a href="#" class="league_itemLink">
 
-               <ul >
-                <li class="matches_item">
-                    <a href="match-details.html" class="matches_link">
-                        <div class="matches_head">
-                            <span class="tournament-name">Cricket World Cup</span>
-                            <span class="stadium-name">Tottenham Hotspur Stadium, london</span>
-                        </div>
-                        <div class="Matches_body">
-                            <div class="schedule-stats">
-                                <div class="single-team">
-                                    <div class="team-icon">
-                                        <img src="assets/images/logo-cricket.jpg" alt="">
+                            <div class="league_tobar">
+                                <div class="league_itemLeft">
+                                    <div class="league_teamFlag">
+                                        <img src="assets/images/tf-1.jpg" alt="team logo">
                                     </div>
-                                    <span class="team-name">India</span>
+                                    <h4 class="league_teamName">Cambodia</h4>
                                 </div>
-                                <div class="date-times-vs">
-                                    <span class="time"><i class="fa-regular fa-clock"></i> 09:00 AM</span>
-                                    <span class="date">24 Nov SAT, 2025</span>
-                                    <img src="assets/images/vs.png" alt="" class="versace-icon">
-                                </div>
-                                <div class="single-team">
-                                    <div class="team-icon">
-                                        <img src="assets/images/logo-cricket.jpg" alt="">
+                                <h4 class="league_teamVs">VS</h4>
+                                <div class="league_itemLeft league_itemRight">
+                                    <div class="league_teamFlag">
+                                        <img src="assets/images/tf-2.jpg" alt="team logo">
                                     </div>
-                                    <span class="team-name">England</span>
+                                    <h4 class="league_teamName">England</h4>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-               </ul>
 
-                <section class="match_details">
-                    <div class="container">
-                        <div class="match_details-wrapper">
-                            <ul class="match_detailsInner">
-                                <li class="leagues_item">
-                                    <div class="leagues_inner">
-                                        <div class="leagues_head">
-                                            <div class="leagues_headLogo">
-                                                <img src="assets/images/logo-cricket.jpg" alt="">
+                            <div class="league_btm">
+                                <p class="league_stadium league_btm--sec">Cricket World Cup </p>
+                                <p class="league_location league_btm--sec">Tottenham Hotspur Stadium, london</p>
+                                <p class="league_timeDate league_btm--sec"> <span>SAT 24th Nov 2025 </span> <span><i
+                                            class="fa-regular fa-clock"> </i> 09:00 AM</span></p>
+
+                            </div>
+
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="tab-content-wrapper">
+                <div class="toggle-target">
+                    <a href="#" class="tab active" data-toggle-target=".tab-content-1">Guard</a>
+                    <a href="#" class="tab" data-toggle-target=".tab-content-2">Forward</a>
+                    <a href="#" class="tab" data-toggle-target=".tab-content-3">Center</a>
+                </div>
+
+                <!--tab-content 1  -->
+                <div class="tab-content tab-content-1 active">
+                    <div class="basket_leagues-inner-content basketball-header-main">
+                        <div class="matches-list matches_details">
+
+                            <ul class="leagues_lists leagues_lists--matcheDetails ">
+
+                                <li class="league_item">
+                                    <a href="#" class="league_itemLink">
+                                        <div class="player_profile">
+                                            <div class="player_profilewrapp">
+                                                <div class="player_profileImg">
+                                                    <img src="assets/images/jason-sangha.webp" alt="player profile">
+                                                </div>
+                                                <div class="player_profileContent">
+                                                    <h3>Jason Sangha</h3>
+                                                    <h5>Australia</h5>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="leagues_body">
-                                            <h2 class="leagues_bodyheading">
-                                                Team Name
-                                            </h2>
-                                            <p>xyz</p>
-                                        </div>
-                                        <div class="leagues_ftr">
-                                            <div class="leagues_ftrinner">
-
-                                                <div class="leagues_ftrInnerstart leagues_ftrInnersec">
-                                                    <h3>Team</h3>
-                                                    <div class="leagues_ftrInnersecIcon">
-                                                        <img src="assets/images/logo-cricket.jpg">
-                                                    </div>
-                                                </div>
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Name</h3>
-                                                    <p>Virat kohali</p>
-                                                </div>
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Position</h3>
-                                                    <p>F</p>
-
-                                                </div>
-
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Score</h3>
-                                                    <p>0</p>
-
-                                                </div>
+                                        <div class="league_btm">
+                                            <div class="league_btmDetails">
+                                                <p class="league_cupType league_btm--sec"><strong>Selected By:</strong>
+                                                    League</p>
+                                                <p class="league_startDate league_btm--sec"><strong>Team:</strong>
+                                                    <img src="assets/images/team-logo.jpg" alt="team logo">
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Age:</strong>25
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Injured:</strong>No
+                                                </p>
+                                                <button class="custom-btn">
+                                                    Add
+                                                </button>
+                                                <button class="custom-btn d-none">
+                                                    Remove
+                                                </button>
 
                                             </div>
-
                                         </div>
-                                    </div>
+
+                                    </a>
                                 </li>
-                                <li class="leagues_item">
-                                    <div class="leagues_inner">
-                                        <div class="leagues_head">
-                                            <div class="leagues_headLogo">
-                                                <img src="assets/images/logo-cricket.jpg" alt="">
+                                <li class="league_item">
+                                    <a href="#" class="league_itemLink">
+                                        <div class="player_profile">
+                                            <div class="player_profilewrapp">
+                                                <div class="player_profileImg">
+                                                    <img src="assets/images/jason-sangha.webp" alt="player profile">
+                                                </div>
+                                                <div class="player_profileContent">
+                                                    <h3>Jason Sangha</h3>
+                                                    <h5>Australia</h5>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="leagues_body">
-                                            <h2 class="leagues_bodyheading">
-                                                Team Name
-                                            </h2>
-                                            <p>xyz</p>
-                                        </div>
-                                        <div class="leagues_ftr">
-                                            <div class="leagues_ftrinner">
-
-                                                <div class="leagues_ftrInnerstart leagues_ftrInnersec">
-                                                    <h3>Team</h3>
-                                                    <div class="leagues_ftrInnersecIcon">
-                                                        <img src="assets/images/logo-cricket.jpg">
-                                                    </div>
-                                                </div>
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Name</h3>
-                                                    <p>Virat kohali</p>
-                                                </div>
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Position</h3>
-                                                    <p>F</p>
-
-                                                </div>
-
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Score</h3>
-                                                    <p>0</p>
-
-                                                </div>
+                                        <div class="league_btm">
+                                            <div class="league_btmDetails">
+                                                <p class="league_cupType league_btm--sec"><strong>Selected By:</strong>
+                                                    League</p>
+                                                <p class="league_startDate league_btm--sec"><strong>Team:</strong>
+                                                    <img src="assets/images/team-logo.jpg" alt="team logo">
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Age:</strong>25
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Injured:</strong>No
+                                                </p>
+                                                <button class="custom-btn">
+                                                    Add
+                                                </button>
+                                                <button class="custom-btn d-none">
+                                                    Remove
+                                                </button>
 
                                             </div>
-
                                         </div>
-                                    </div>
+
+                                    </a>
                                 </li>
-                                <li class="leagues_item">
-                                    <div class="leagues_inner">
-                                        <div class="leagues_head">
-                                            <div class="leagues_headLogo">
-                                                <img src="assets/images/logo-cricket.jpg" alt="">
+                                <li class="league_item">
+                                    <a href="#" class="league_itemLink">
+                                        <div class="player_profile">
+                                            <div class="player_profilewrapp">
+                                                <div class="player_profileImg">
+                                                    <img src="assets/images/jason-sangha.webp" alt="player profile">
+                                                </div>
+                                                <div class="player_profileContent">
+                                                    <h3>Jason Sangha</h3>
+                                                    <h5>Australia</h5>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="leagues_body">
-                                            <h2 class="leagues_bodyheading">
-                                                Team Name
-                                            </h2>
-                                            <p>xyz</p>
-                                        </div>
-                                        <div class="leagues_ftr">
-                                            <div class="leagues_ftrinner">
-
-                                                <div class="leagues_ftrInnerstart leagues_ftrInnersec">
-                                                    <h3>Team</h3>
-                                                    <div class="leagues_ftrInnersecIcon">
-                                                        <img src="assets/images/logo-cricket.jpg">
-                                                    </div>
-                                                </div>
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Name</h3>
-                                                    <p>Virat kohali</p>
-                                                </div>
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Position</h3>
-                                                    <p>F</p>
-
-                                                </div>
-
-                                                <div class="leagues_ftrInnerEnd leagues_ftrInnersec">
-                                                    <h3>Score</h3>
-                                                    <p>0</p>
-
-                                                </div>
+                                        <div class="league_btm">
+                                            <div class="league_btmDetails">
+                                                <p class="league_cupType league_btm--sec"><strong>Selected By:</strong>
+                                                    League</p>
+                                                <p class="league_startDate league_btm--sec"><strong>Team:</strong>
+                                                    <img src="assets/images/team-logo.jpg" alt="team logo">
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Age:</strong>25
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Injured:</strong>No
+                                                </p>
+                                                <button class="custom-btn">
+                                                    Add
+                                                </button>
+                                                <button class="custom-btn d-none">
+                                                    Remove
+                                                </button>
 
                                             </div>
-
                                         </div>
-                                    </div>
+
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
+                <!--tab-content  3  -->
+                <div class="tab-content tab-content-3">
+                    <div class="basket_leagues-inner-content basketball-header-main">
+                        <div class="matches-list matches_details">
+
+                            <ul class="leagues_lists leagues_lists--matcheDetails ">
 
 
-                <!-- Component End  -->
+                                <li class="league_item">
+                                    <a href="#" class="league_itemLink">
+                                        <div class="player_profile">
+                                            <div class="player_profilewrapp">
+                                                <div class="player_profileImg">
+                                                    <img src="assets/images/jason-sangha.webp" alt="player profile">
+                                                </div>
+                                                <div class="player_profileContent">
+                                                    <h3>Jason Sangha</h3>
+                                                    <h5>Australia</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_btm">
+                                            <div class="league_btmDetails">
+                                                <p class="league_cupType league_btm--sec"><strong>Selected By:</strong>
+                                                    League</p>
+                                                <p class="league_startDate league_btm--sec"><strong>Team:</strong>
+                                                    <img src="assets/images/team-logo.jpg" alt="team logo">
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Age:</strong>25
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Injured:</strong>No
+                                                </p>
+                                                <button class="custom-btn">
+                                                    Add
+                                                </button>
+                                                <button class="custom-btn d-none">
+                                                    Remove
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li class="league_item">
+                                    <a href="#" class="league_itemLink">
+                                        <div class="player_profile">
+                                            <div class="player_profilewrapp">
+                                                <div class="player_profileImg">
+                                                    <img src="assets/images/jason-sangha.webp" alt="player profile">
+                                                </div>
+                                                <div class="player_profileContent">
+                                                    <h3>Jason Sangha</h3>
+                                                    <h5>Australia</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="league_btm">
+                                            <div class="league_btmDetails">
+                                                <p class="league_cupType league_btm--sec"><strong>Selected By:</strong>
+                                                    League</p>
+                                                <p class="league_startDate league_btm--sec"><strong>Team:</strong>
+                                                    <img src="assets/images/team-logo.jpg" alt="team logo">
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Age:</strong>25
+                                                </p>
+                                                <p class="league_btm--sec"><strong>Injured:</strong>No
+                                                </p>
+                                                <button class="custom-btn">
+                                                    Add
+                                                </button>
+                                                <button class="custom-btn d-none">
+                                                    Remove
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
+
+            <div class="team-btns text-center">
+                <a href="team-view.html" class="next-btn">Next</a>
+            </div>
+
         </div>
-    </section>
+    </div>
 
     <!-- footer section -->
     <footer class="site-footer">
