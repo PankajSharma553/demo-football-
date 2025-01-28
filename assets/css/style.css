@@ -1,39 +1,15 @@
-/*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 :root {
   --white-color: #ffffff;
-  --primary-color: #BC6C25;
-  --secondary-color: #DDA15E;
-  --section-bg-color: #b78752;
-  --custom-btn-bg-color: #BC6C25;
-  --custom-btn-bg-hover-color: #DDA15E;
-  --dark-color: #000000;
-  --p-color: #717275;
-  --border-color: #7fffd4;
-  --link-hover-color: #E76F51;
 
+  /* font family */
   --body-font-family: "Roboto";
-
-  --h1-font-size: 68px;
-  --h2-font-size: 46px;
-  --h3-font-size: 32px;
-  --h4-font-size: 28px;
-  --h5-font-size: 24px;
-  --h6-font-size: 22px;
-  --p-font-size: 20px;
-  --btn-font-size: 16px;
-  --form-btn-font-size: 18px;
-  --menu-font-size: 16px;
-
-  --border-radius-large: 100px;
-  --border-radius-medium: 20px;
-  --border-radius-small: 10px;
-
-  --font-weight-thin: 200;
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
 }
 
 body {
@@ -41,84 +17,9 @@ body {
   font-family: var(--body-font-family);
 }
 
-
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--dark-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--font-weight-bold);
-}
-
-h1 {
-  font-size: var(--h1-font-size);
-}
-
-h2 {
-  font-size: var(--h2-font-size);
-}
-
-h3 {
-  font-size: var(--h3-font-size);
-}
-
-h4 {
-  font-size: var(--h4-font-size);
-}
-
-h5 {
-  font-size: var(--h5-font-size);
-}
-
-h6 {
-  font-size: var(--h6-font-size);
-}
-
-p {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
-}
-
-ul li {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
-}
-
-a,
-button {
-  touch-action: manipulation;
-  transition: all 0.3s;
-}
-
-a {
-  display: inline-block;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--link-hover-color);
-}
-
-b,
-strong {
-  font-weight: var(--font-weight-bold);
-}
 
 ul {
   list-style: none;
@@ -170,143 +71,31 @@ ul {
 }
 
 /*---------------------------------------
-  TIMELINE               
------------------------------------------*/
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 5px;
-  background-color: var(--white-color);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-.timeline-container {
-  padding: 10px 40px;
-  padding-top: 0;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-
-.timeline-container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -12px;
-  background-color: var(--white-color);
-  border: 5px solid #7c5c52;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-container-left {
-  left: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.timeline-container-right {
-  left: 50%;
-  transition: 0.3s ease-in-out;
-}
-
-.timeline-container-left:hover {
-  transform: translateY(-10px);
-}
-
-.timeline-container-right:hover {
-  transform: translateY(-10px);
-}
-
-.timeline-container-left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 9px;
-  width: 0;
-  z-index: 1;
-  right: 25px;
-  border: medium solid white;
-  border-width: 20px 0 20px 20px;
-  border-color: transparent transparent transparent white;
-}
-
-.timeline-container-right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 9px;
-  width: 0;
-  z-index: 1;
-  left: 25px;
-  border: medium solid white;
-  border-width: 20px 20px 20px 0;
-  border-color: transparent white transparent transparent;
-}
-
-.timeline-container-right::after {
-  left: -13px;
-}
-
-.timeline-content {
-  padding: 5px;
-  background-color: var(--white-color);
-  position: relative;
-  border-radius: var(--border-radius-medium);
-  display: block;
-}
-
-/*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
+  background: #509fb9;
+  border: 1px solid transparent;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: white;
+  outline: none;
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-bold);
   line-height: normal;
   transition: all 0.3s;
   padding: 12px 28px;
+  border-radius: 4px;
 }
 
 .custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
+  border-color: #509fb9;
+  color: #509fb9;
+  background-color: white;
 }
 
-.custom-border-btn {
-  background: transparent;
-  border: 2px solid var(--white-color);
-  color: var(--white-color);
+.play_btn {
+  padding: 12px 40px;
 }
-
-.custom-border-btn:hover {
-  background: var(--white-color);
-  color: var(--secondary-color);
-}
-
-.custom-btn-bg-white {
-  border-color: var(--white-color);
-  color: var(--white-color);
-}
-
-.custom-btn-italic {
-  font-style: italic;
-}
-
 
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
@@ -319,656 +108,10 @@ ul {
   left: 0;
 }
 
-.sticky-wrapper.is-sticky .container {
-  background: rgb(0, 0, 0);
-  border-radius: var(--border-radius-medium);
-  padding: 15px 20px;
-}
-
-.navbar {
-  background: transparent;
-  z-index: 999999;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.navbar .container {
-  background: rgb(0, 0, 0);
-  border-radius: var(--border-radius-medium);
-  padding: 15px 20px;
-}
-
-.navbar-brand,
-.navbar-brand:hover {
-  font-size: var(--h4-font-size);
-  font-weight: var(--font-weight-bold);
-  display: block;
-  color: var(--white-color);
-}
-
-.navbar .navbar-brand-image {
-  filter: brightness(0) invert(1);
-}
-
-.navbar-brand-image {
-  width: 48px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.navbar .custom-btn {
-  padding: 10px 20px;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  border-radius: var(--border-radius-large);
-  margin: 8px;
-  padding: 8px;
-}
-
-.navbar-nav .nav-link {
-  display: inline-block;
-  color: var(--white-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-bold);
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-/* .navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
-} */
-.nav-link .active {
-  color: var(--secondary-color);
-}
-
-.navbar .dropdown-menu {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-  border: 0;
-  display: inherit;
-  opacity: 0;
-  min-width: 9rem;
-  margin-top: 20px;
-  padding: 13px 0 10px 0;
-  transition: all 0.3s;
-  pointer-events: none;
-}
-
-.navbar .dropdown-menu::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 15px solid var(--white-color);
-  position: absolute;
-  top: -10px;
-  left: 10px;
-}
-
-.navbar .dropdown-item {
-  display: inline-block;
-  color: var(--p-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-medium);
-  position: relative;
-}
-
-.navbar .dropdown-item.active,
-.navbar .dropdown-item:active,
-.navbar .dropdown-item:focus,
-.navbar .dropdown-item:hover {
-  background: transparent;
-  color: var(--link-hover-color);
-}
-
-.navbar .dropdown-toggle::after {
-  content: "\f282";
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-size: var(--menu-font-size);
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  left: 2px;
-  border: 0;
-}
-
-
-
-.navbar-toggler {
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  margin: 0;
-  width: 30px;
-  height: 35px;
-  outline: none;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  background: transparent;
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
-  top: 0;
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-  transform: rotate(45deg);
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transform: rotate(-45deg);
-}
-
-.navbar-toggler .navbar-toggler-icon {
-  background: var(--white-color);
-  transition: background 10ms 300ms ease;
-  display: block;
-  width: 30px;
-  height: 2px;
-  position: relative;
-}
-
-.navbar-toggler .navbar-toggler-icon:before,
-.navbar-toggler .navbar-toggler-icon:after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background: var(--white-color);
-  width: 30px;
-  height: 2px;
-  content: '';
-}
-
-.navbar-toggler .navbar-toggler-icon::before {
-  top: -8px;
-}
-
-.navbar-toggler .navbar-toggler-icon::after {
-  top: 8px;
-}
-
-
-/*---------------------------------------
-  HERO        
------------------------------------------*/
-.hero-section {
-  background-color: var(--dark-color);
-  position: relative;
-  overflow: hidden;
-  min-height: 620px;
-  text-align: center;
-}
-
-.hero-section::after {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-radius: var(--border-radius-medium);
-  content: "";
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-55%, -50%) rotate(45deg);
-  width: 250px;
-  height: 350px;
-  pointer-events: none;
-}
-
-
-.hero-section h1 {
-  color: var(--white-color);
-}
-
-.small-text {
-  color: var(--secondary-color);
-}
-
-.hero-section .custom-border-btn {
-  border-color: transparent;
-}
-
-.hero-section .container {
-  position: relative;
-  z-index: 9;
-}
-
-.hero-slides {
-  width: 100%;
-  height: 100%;
-  position: absolute !important;
-}
-
-.opening-hours-list {
-  margin: 0;
-  padding: 0;
-}
-
-.opening-hours-list li {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-normal);
-  margin-bottom: 10px;
-}
-
-.opening-hours-list li .underline {
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 35%;
-  height: 1px;
-  margin: auto 15px 0 15px;
-}
-
-
-/*---------------------------------------
-  Squad section             
------------------------------------------*/
-.about-section {
-  background-color: var(--secondary-color);
-  position: relative;
-}
-
-.about-section .ratio {
-  border-radius: var(--border-radius-medium);
-}
-
-.custom-video {
-  border-radius: var(--border-radius-medium);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.about-image-wrap {
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-}
-
-.about-video-info {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
-  border-radius: var(--border-radius-medium);
-  bottom: 0;
-  height: auto;
-  padding: 40px;
-}
-
-.about-video-info h4 {
-  color: var(--white-color);
-}
-
-.about-section h6 {
-  color: var(--secondary-color);
-}
-
-.team-block-wrap {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-  max-height: 450px;
-  cursor: pointer;
-}
-
-.team-block-wrap:hover .team-block-image {
-  transform: scale(1.2);
-}
-
-
-.team-block-image-wrap {
-  width: 100%;
-}
-
-.team-block-image {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s;
-}
-
-.team-block-info {
-  background-image: linear-gradient(to bottom, rgb(0 0 0 / 65%), rgb(188 108 37 / 10%));
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 30px;
-}
-
-.team-block-info .badge {
-  margin: auto;
-  top: 2px;
-  bottom: 0;
-}
-
-
-/*---------------------------------------
-  OUR MENU              
------------------------------------------*/
-
-.menu-section {
-  background-image: url('../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.menu-block-wrap {
-  background: rgba(0, 0, 0, 0.65);
-  border-radius: var(--border-radius-medium);
-  padding: 45px;
-}
-
-.menu-block .border-top {
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-.menu-block h6 {
-  color: var(--white-color);
-}
-
-.menu-block small {
-  color: rgba(255, 255, 255, 0.35);
-}
-
-.menu-block strong {
-  color: var(--secondary-color);
-}
-
-.menu-block-image {
-  border-radius: 100%;
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-  cursor: pointer;
-}
-
-.badge {
-  background-color: var(--primary-color);
-  font-size: 12px;
-  position: relative;
-  bottom: 4px;
-  padding-bottom: 6px;
-}
-
-.badge::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -5px;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid var(--primary-color);
-}
-
-
-/*---------------------------------------
- Latest section              
------------------------------------------*/
-
-.reviews-section {
-  background-color: #7c5c52;
-}
-
-.reviews-block {
-  background-color: var(--section-bg-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-}
-
-.reviews-block .border-top {
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-.reviews-block-image-wrap {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-}
-
-.reviews-block-image-wrap-image {
-  height: 350px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/bowler.jpg");
-}
-
-.timeline-container--one .reviews-block-image-wrap-image {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),
-    url('../images/latest1.avif');
-}
-
-.timeline-container--two .reviews-block-image-wrap-image {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),
-    url('../images/latest2.jpg');
-}
-
-.timeline-container--three .reviews-block-image-wrap-image {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),
-    url('../images/latest3.webp');
-}
-
-.reviews-block-image {
-  border-radius: var(--border-radius-large);
-  width: 65px;
-  height: 65px;
-  object-fit: cover;
-  margin-right: 10px;
-}
-
-.reviews-block-info {
-  padding: 20px 30px;
-}
-
-.reviews-block-info p {
-  font-size: var(--btn-font-size);
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.reviews-group i {
-  color: var(--white-color);
-}
-
-
-/*---------------------------------------
-  BOOKING SECTION              
------------------------------------------*/
-
-.booking-section {
-  background-image: url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  border: 40px solid blueviolet;
-}
-
-.booking-form-wrap {
-  background-color: rgba(0, 0, 0, 0.65);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-  margin-top: 100px;
-}
-
-.booking-form {
-  padding: 55px 65px;
-}
-
-.booking-form-image-wrap {
-  position: relative;
-  height: 100%;
-}
-
-.booking-form-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.booking-form-text span {
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-}
-
-.reservation-page .custom-border-btn {
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.reservation-page .custom-border-btn:hover {
-  border-color: transparent;
-}
-
-
-/*---------------------------------------
-  CONTACT               
------------------------------------------*/
-.contact-section {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1)), url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.google-map {
-  border-radius: var(--border-radius-medium);
-  filter: grayscale(100);
-}
-
-.contact-block-wrap {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-medium);
-  padding: 0;
-  min-height: 200px;
-}
-
-.contact-block {
-  background: var(--secondary-color);
-  border-radius: var(--border-radius-medium);
-  transform: rotate(8deg);
-  height: 100%;
-  padding: 20px 40px;
-}
-
-.contact-block h6 {
-  transform: rotate(-8deg);
-}
-
-.contact-block .custom-icon {
-  background: var(--primary-color);
-  border-radius: var(--border-radius-large);
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  position: relative;
-}
-
-.contact-block strong {
-  display: block;
-  color: var(--white-color);
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
-.custom-form .form-control {
-  color: var(--p-color);
-  border-radius: var(--border-radius-small);
-  margin-bottom: 30px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  box-shadow: none;
-  outline: none;
-  transition: all 0.3s;
-}
-
-.custom-form .form-control:hover,
-.custom-form .form-control:focus {
-  background: var(--primary-color);
-  border-color: transparent;
-}
-
-.custom-form .form-label {
-  color: var(--white-color);
-  font-style: italic;
-  margin-bottom: 15px;
-}
-
-.custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
-  border: none;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--form-btn-font-size);
-  font-weight: var(--font-weight-bold);
-  transition: all 0.3s;
-  margin-bottom: 0;
-}
-
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--white-color);
-  border-color: transparent;
-  color: var(--primary-color);
-}
-
-.contact-form .form-control,
-.booking-form .form-control {
-  background-color: transparent;
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
-.booking-form .form-control {
-  color: var(--white-color);
-}
-
-.custom-form input::-webkit-input-placeholder,
-.custom-form textarea::-webkit-input-placeholder {
-  color: var(--white-color);
-}
-
-.booking-form input:-moz-placeholder,
-.booking-form textarea:-moz-placeholder {
-  color: var(--white-color);
+.header_link {
+  font-size: 17px;
+  font-weight: 400;
+  color: #509fb9;
 }
 
 
@@ -976,7 +119,7 @@ ul {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--black-color);
+  background-color: black;
   padding-top: 100px;
   /* padding-bottom: 100px; */
   padding-bottom: 30px;
@@ -1070,141 +213,18 @@ ul {
 
 .footer_link {
   color: var(--white-color);
-}
-
-/*---------------------------------------
-  SignUp section              
------------------------------------------*/
-
-.SignUp {
-  background-image: url("../images/singup-banner.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.SignUp::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.signup-form {
-  display: flex;
-  justify-content: space-between;
-  gap: 4px;
-  margin-top: 10px;
-
-}
-
-.signup-form .signup-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 0;
-  border: none;
-  font-weight: bold;
-  outline: none;
-  border-color: #7c5c52;
-}
-
-.signup-form .SignUp-btn {
-  border-radius: 8px;
-}
-
-.signup-form .SignUp-btn:hover {
-  background-color: var(--white-color);
-  color: var(--custom-btn-bg-color);
-  border-color: transparent;
-}
-
-.SignUp_sec {
-  background-color: var(--custom-btn-bg-hover-color);
-  padding: 24px;
-  border-radius: 4px;
-  position: relative;
-  z-index: 1;
-}
-
-.joinleagues {
-  padding: 40px;
-  background-color: var(--custom-btn-bg-color);
-}
-
-.WhyChoose-sec {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 16px;
-  border-radius: 4px;
-  height: 100%;
   transition: 0.3s ease-in-out;
 }
 
-.WhyChoose-sec:hover {
-  transform: translatey(-10px);
-}
-
-.WhyChoose-iconWrapp {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto;
-  background-color: var(--custom-btn-bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 4px;
-  margin-bottom: 12px;
-}
-
-.WhyChoose-icon {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 48px;
-  height: 48px;
-  filter: invert(1);
-}
-
-.WhyChoose-sec--one .WhyChoose-icon {
-  background-image: url("../images/user-experience.png");
-
-}
-
-.WhyChoose-sec--two .WhyChoose-icon {
-  background-image: url("../images/updated.png");
-}
-
-.WhyChoose-sec--three .WhyChoose-icon {
-  background-image: url("../images/league.png");
-}
-
-.WhyChoose-sec--four .WhyChoose-icon {
-  background-image: url("../images/guarantee.png");
-}
-
-.WhyChoose-sec--five .WhyChoose-icon {
-  background-image: url("../images/player.png");
-}
-
-.WhyChoose-sec--six .WhyChoose-icon {
-  background-image: url("../images/revert.png");
+.footer_link:hover {
+  color: #509fb9;
 }
 
 .socials_wrapper {
   display: flex;
   align-items: center;
   gap: 16px;
+  justify-content: center;
 
 }
 
@@ -1219,7 +239,7 @@ ul {
 
 .social:hover {
   border-color: transparent;
-  background-color: var(--custom-btn-bg-hover-color);
+  background-color: #509fb9;
 }
 
 .social-link {
@@ -1286,6 +306,7 @@ ul {
 .footer-disclaimer {
   color: var(--white-color);
   font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .bannerLogin {
@@ -1418,108 +439,6 @@ Banner section
   color: var(--custom-btn-bg-color);
 }
 
-
-/*---------------------------------------
-Contact section            
------------------------------------------*/
-
-.contact {
-  margin-block: 50px;
-}
-
-.contact_inner {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid var(--custom-btn-bg-color);
-  padding: 16px;
-  border-radius: 4px;
-  margin-block: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.contact_right,
-.contact_left {
-  width: 49%;
-  /* border: 1px solid red; */
-}
-
-.contact_label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: start;
-  margin-bottom: 12px;
-}
-
-.contact_input {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.contact_input:focus {
-  border-color: var(--custom-btn-bg-color);
-}
-
-.contact_input:focus-visible {
-  border-color: var(--custom-btn-bg-color);
-}
-
-.contact_leftImg {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/latest3.webp");
-}
-
-.input_textarea {
-  width: 100%;
-  padding: 12px;
-}
-
-/* dsfbsafhdf */
-
-
-
-.doucment-type-wrapper {
-  /* max-width: 1200px; */
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgb(221 161 94);
-}
-
-
-.header_right {
-  display: flex;
-  gap: 2px;
-}
-
-.header_right .nav-item .nav-link {
-  border-radius: var(--border-radius-large);
-  margin: 10px;
-  padding: 10px;
-}
-
-.nav-item {
-  list-style: none;
-}
-
-.header_right .nav-item .nav-link {
-  display: inline-block;
-  color: var(--white-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-bold);
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 /*---------------------------------------
 Profile  section             
 -----------------------------------------*/
@@ -1554,10 +473,6 @@ Profile  section
   align-items: center;
 }
 
-.avatar-content a span {
-  color: #fff;
-  font-size: 17px;
-}
 
 .avatar-content span {
   color: #000;
@@ -1586,179 +501,6 @@ Profile  section
   display: flex;
   align-items: center;
 }
-
-/*---------------------------------------
- Playing guide section             
------------------------------------------*/
-.playingGuide {
-  margin-block: 80px;
-}
-
-.playingGuide_inner {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid var(--custom-btn-bg-hover-color);
-  padding: 12px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.playingGuide_right {
-  width: 49%;
-}
-
-.playingGuide_left {
-  width: 49%;
-}
-
-.playingGuide_img {
-  border-radius: 2px;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-}
-
-.playingGuide_inner--one .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/palying-img1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-
-.playingGuide_inner--two .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--three .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img3.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--four .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img4.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--five .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img5.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--six .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img6.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--seven .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img7.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--eight .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img8.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_inner--nine .playingGuide_img {
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 60%), rgba(188, 108, 37, 60%)),
-    url("../images/playing-img9.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.playingGuide_content {
-  padding: 16px;
-}
-
-.playingGuide_title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: var(--custom-btn-bg-color);
-}
-
-.playingGuide_list {
-  margin-left: 6%;
-}
-
-.playingGuide_item,
-.playingGuide_subItem {
-  font-size: 16px;
-  margin-bottom: 8px;
-  list-style: disc;
-}
-
-.playingGuide_item::marker {
-  color: var(--custom-btn-bg-hover-color);
-}
-
-.playingGuide_subList {
-  margin-left: 12%;
-}
-
-.playingGuide_subItem {
-  list-style: circle;
-}
-
-.playingGuide_subItem::marker {
-  color: var(--custom-btn-bg-color);
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
-/*---------------------------------------
-dsbsaff
-dsbfsdagfsasfa
-jhdbfhdash             
------------------------------------------*/
-/* inner section css */
-p {
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  /* color */
-  --steel-blue: #4682B4;
-  --lime-green: #32CD32;
-  --white-color: #ffffff;
-  --black-color: #000000;
-
-  /* font family */
-}
-
-
-
 
 /* signup section */
 .signup {
@@ -1799,7 +541,7 @@ p {
   margin: 0 auto;
   border-radius: 4px;
   padding: 30px 16px;
-  /* background-color: rgb(0 0 0 / 56%); */
+
 }
 
 .signup_heading {
@@ -1864,8 +606,6 @@ p {
   color: var(--blue-light);
 }
 
-
-/* =======================>>> */
 .footer_list {
   padding-left: 0;
 }
@@ -2079,27 +819,6 @@ img {
   height: 30px;
 }
 
-.custom-btns {
-  padding: 10px !important;
-  outline: none;
-  border: none;
-  display: inline-block;
-  border-radius: 8px;
-  background-color: #12e1b9;
-  color: #000 !important;
-  margin-left: 10px;
-  border: 1px solid transparent;
-  transition: 0.4s all ease-in-out;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.custom-btns:hover {
-  background-color: #000;
-  color: #fff !important;
-  border-color: #12e1b9;
-}
-
 .custom-signup {
   margin-left: 15px;
 }
@@ -2131,7 +850,6 @@ img {
 }
 
 /* Header CSS End */
-
 
 /* Home Banner CSS Start */
 .home_banner {
@@ -2350,10 +1068,6 @@ img {
   box-shadow: #fff 0px 5px 5px;
 }
 
-
-
-
-
 /* AOS Overflow CSS Start */
 .selected-hotels-section {
   overflow: hidden;
@@ -2391,175 +1105,6 @@ img {
 .after-banner-text-wrap p {
   text-align: center;
 }
-
-
-/* Login Signup Form Pages CSS Start */
-.login_signup_form {
-  padding-block: 160px;
-}
-
-.form-container {
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  border-radius: 8px;
-  padding: 24px;
-  z-index: 1;
-}
-
-#login-signup {
-  padding: 16px;
-  border-radius: 0 20px;
-  background-color: white;
-  border-radius: 4px;
-}
-
-#login-signup input {
-  border: 1px solid #ccc;
-}
-
-.login_signup_form {
-  background-color: #dda15e1a;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-#login-signup h3 {
-  display: block;
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 24px;
-  color: rgba(0, 0, 0, 70%);
-  text-transform: capitalize;
-}
-
-#login-signup h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.login_signup_form button:hover {
-  background-color: var(--white-color);
-  color: var(--custom-btn-bg-color);
-  border-color: var(--custom-btn-bg-color) !important;
-  color: var(--custom-btn-bg-color) !important;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-#login-signup input[type="text"],
-#login-signup input[type="email"],
-#login-signup input[type="tel"],
-#login-signup input[type="url"],
-#login-signup textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-#login-signup input[type="text"]:hover,
-#login-signup input[type="email"]:hover,
-#login-signup input[type="tel"]:hover,
-#login-signup input[type="url"]:hover,
-#login-signup textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
-}
-
-#login-signup textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
-
-#login-signup button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background-color: var(--custom-btn-bg-color);
-  color: var(--white-color);
-  margin: 0 0 5px;
-  font-weight: 500;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  transition: 0.4s all ease-in-out;
-  border: 1px solid transparent;
-}
-
-#login-signup button[type="submit"]:hover {
-  border-color: transparent;
-  background-color: white;
-  border-color: transparent;
-  color: var(--pre-blue);
-
-}
-
-.jump-text {
-  color: rgba(0, 0, 0, 80%);
-
-}
-
-.jump-text a {
-  color: rgba(0, 0, 0, 80%);
-  font-weight: 400;
-}
-
-::-webkit-input-placeholder {
-  color: #d7d6d6;
-}
-
-:-moz-placeholder {
-  color: #d7d6d6;
-}
-
-::-moz-placeholder {
-  color: #d7d6d6;
-}
-
-:-ms-input-placeholder {
-  color: #d7d6d6;
-}
-
-.signup_inner {
-  background-image: url("../images/contact.jpg");
-  height: 100%;
-  width: 100%;
-  padding: 16px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 0.5rem;
-  background-attachment: fixed;
-  max-width: 620px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/* .signup_inner::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  border-radius: 8px;
-  content: "";
-  background-color: rgb(0 0 0 / 20%);
-} */
 
 /* Login Signup Form Pages CSS Start */
 
@@ -2611,211 +1156,8 @@ fieldset {
   border-spacing: 0;
 }
 
-.fusball_leagues tbody tr td {
-  padding: 0;
-}
-
-.fusball_leagues img.table-img.me-2 {
-  width: 24px;
-  height: 24px;
-}
-
-.fusball_leagues .last-5 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.fusball_leagues tbody tr td {
-  padding: 20px 30px;
-  color: #29292a;
-  font-size: 15px;
-  vertical-align: middle;
-}
 
 
-.fusball_leagues thead tr th {
-  padding: 20px 30px;
-  color: #29292a;
-  font-size: 15px;
-  vertical-align: middle;
-  background: #f8f9fa;
-  text-transform: uppercase;
-}
-
-.team-view-page .fusball_leagues thead tr th:nth-child(2),
-.team-view-page .fusball_leagues thead tr th:nth-child(3),
-.team-view-page .fusball_leagues thead tr th:nth-child(4) {
-  text-align: center;
-}
-
-.matches-page .fusball_leagues thead tr th:nth-child(2),
-.team-players-page .fusball_leagues thead tr th:nth-child(3),
-.team-players-page .fusball_leagues thead tr th:nth-child(2),
-.team-players-page .fusball_leagues thead tr th:nth-child(4) {
-  text-align: center;
-}
-
-.matches-page td.player-name p {
-  color: #000;
-}
-
-.matches-page .fusball_leagues thead tr th:last-child {
-  text-align: right;
-}
-
-
-.fusball_leagues tr:nth-child(odd) {
-  background-color: transparent;
-}
-
-.fusball_leagues tr:nth-child(even) {
-  background-color: #4f7bc763;
-}
-
-.fusball_leagues td.toxic a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.fusball_leagues .text-success {
-  color: #198754 !important;
-}
-
-.fusball_leagues .text-danger {
-  color: #dc3545 !important;
-}
-
-.fusball_leagues .text-secondary {
-  color: #6c757d !important;
-}
-
-.fusball_leagues {
-  padding-top: 50px;
-  padding-bottom: 60px;
-}
-
-.fusball_leagues.ownership-ops {
-  padding-top: 60px;
-}
-
-.fusball_leagues-inner h2 {
-  color: var(--blue-light);
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-
-.back-btn a {
-  display: inline-block;
-  padding: 5px 26px;
-  border-radius: 4px;
-  margin: 0 0 20px;
-  line-height: 1;
-  background-color:#509fb9;
-  transition: all 0.2s ease-in-out;
-}
-
-.back-btn a:hover {
-  opacity: 0.9;
-}
-
-.palyer-header {
-  color: #fff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-radius: 14px;
-  padding: 10px;
-  margin: 0 0 50px;
-  background: url(../images/Background.jpg);
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1;
-}
-
-.palyer-header .team-logo img {
-  width: 80px;
-  aspect-ratio: 1;
-  object-fit: contain;
-}
-
-.palyer-header .team-logo:last-child {
-  text-align: right;
-}
-
-.palyer-header .match-details {
-  text-align: center;
-}
-
-.palyer-header .team-logo span {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.palyer-header .team-logo h6 {
-  text-transform: capitalize;
-  font-size: 16px;
-  color: #000;
-}
-
-.team_inner {
-  display: flex;
-  align-items: center;
-}
-
-.palyer-header .team-logo:last-child .team_inner {
-  justify-content: flex-end;
-}
-
-.palyer-header .match-details h6 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.palyer-header .match-details p {
-  font-size: 16px;
-  margin-bottom: 10px;
-
-}
-
-.palyer-header .match-details span {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.matches-table tr td {
-  text-align: center;
-}
-
-.matches-table tr td.match-team-logo:first-child {
-  text-align: left;
-}
-
-.matches-table th:first-child {
-  text-align: left;
-}
-
-.matches-table th {
-  background: #00c900;
-  color: #fff;
-}
-
-td.match-position p {
-  text-transform: capitalize;
-  color: #000;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.team-btns {
-  text-align: center;
-  margin: 20px 0 0;
-}
 
 
 
@@ -3242,24 +1584,6 @@ table tr {
   border-color: #dee2e6;
 }
 
-.matches-details .credits_points span {
-  color: #000;
-  font-weight: 600;
-}
-
-.matches-details .player-name p,
-.team-players-page .player-name p {
-  color: #000;
-  text-align: left;
-  font-weight: 600;
-}
-
-.matches-details .matche-det table th:nth-child(2),
-.matches-details .matche-det table th:nth-child(3),
-.matches-details .matche-det table th:nth-child(4) {
-  text-align: center;
-}
-
 .toggle-target a {
   color: #000;
   font-size: 18px;
@@ -3298,14 +1622,6 @@ table tr {
   color: var(--drak-green);
   font-size: 20px;
   font-weight: bold;
-}
-
-td.match-team-logo h6 {
-  font-size: 16px !important;
-}
-
-td.match-team-logo a {
-  color: #000;
 }
 
 .match-team-logo-inner,
@@ -3379,7 +1695,7 @@ div#mySidenavs {
 }
 
 .avatar-content a span {
-  color: #fff;
+  color: black;
   font-size: 17px;
 }
 
@@ -4208,8 +2524,6 @@ fieldset {
   font-size: 16px;
 }
 
-
-
 .banner_content {
   max-width: 900px;
   text-align: center;
@@ -4282,10 +2596,12 @@ fieldset {
   padding: 80px 0;
 }
 
-section.matches {
+.matches {
   margin-bottom: 70px;
 }
-
+.leagues-section--matches{
+  margin-bottom: 80px;
+}
 .match-header {
   background: url(../images/match-detailsbg.jpg) no-repeat;
   padding: 60px 0 0;
@@ -4623,7 +2939,7 @@ section.matches {
 }
 
 .basket_leagues-inner {
-  margin-block: 80px;
+  margin-block: 90px;
 }
 
 .basket_leagues-inner h2 {
@@ -4973,11 +3289,12 @@ button.plus.player-toggle i {
   border: 1px solid transparent;
 }
 
-.team-btns a:hover{
-background-color:var(--white-color) ;
-border-color: #509fb9;  
-color: #509fb9;
+.team-btns a:hover {
+  background-color: var(--white-color);
+  border-color: #509fb9;
+  color: #509fb9;
 }
+
 /* matches details css end */
 
 /* Team view page css start */
@@ -5817,8 +4134,9 @@ li.team-member .match-team-logo img {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.team_viewinner .league_item{
-width: 32%;
+
+.team_viewinner .league_item {
+  width: 32%;
 }
 
 .team_viewSec h4 {
@@ -6007,12 +4325,10 @@ width: 32%;
   align-items: center;
 }
 
-
-/* ============= */
-
 .header {
-  /* background-color: #000; */
+  background-color: #f5f5f5;
   padding: 16px;
+
 }
 
 .header_wrapper {
@@ -6241,14 +4557,18 @@ width: 32%;
 }
 
 .matches-detail {
-  /* padding-block: 80px; */
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
+.matches-detail .match-details-items {
+  margin-top: 24px;
+}
+
+.matches-detail .match-details-items .league_item {
+  width: 32%;
+}
 
 /*  */
-
-
 /* .matches-detail {
   color: #F7F9F9;
   background: #181818;
@@ -6259,9 +4579,276 @@ width: 32%;
 
 .toggle-target {
   background: #212F3D;
+}
+
+.my-matches .leagues_lists .league_item {
+  width: 31%;
+}
+
+.match-details .leagues_lists {
+  display: block;
+  width: 100%;
+}
+
+.match-details .leagues_lists .league_item {
+  width: 100%;
+}
+
+.match-details .match_detailsInner .league_item {
+  width: 32%;
+}
+
+/* hero section */
+
+.hero {
+  background-image: url("../images/homepgae-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* margin-bottom: 80px; */
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0 0 0 /30%);
+}
+
+.hero_wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.hero_content {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 8px;
+}
+
+/* accordions */
+.accordions {
+  padding-block: 80px;
+  background:
+    linear-gradient(to right, #509fb9, #76c7d2);
+}
+
+.accordions .accordion_wrapper {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 8px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 
 }
 
-.my-matches .leagues_lists .league_item{
-  width: 31%;
+.accordion-item {
+  margin-bottom: 2px;
+}
+
+.categories {
+  margin-bottom: 120px;
+}
+
+.categories_inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+}
+
+.SignUp {
+  background-image: url("../images/singup-banner.webp");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.SignUp::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0 0 0 / 30%);
+}
+
+.SignUp .row {
+  position: relative;
+  z-index: 2;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-input {
+  margin-bottom: 0;
+}
+
+.SignUp_sec {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signup-input {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.SignUp-btn {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.card_img {
+  width: 100%;
+  background-image: url("../images/player1.jpg");
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.card_img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0 0 0 / 40%);
+}
+
+.WhyChoose-sec {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 16px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.WhyChoose-sec:hover {
+  transform: translateY(8px);
+}
+
+.WhyChoose-iconWrapp {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #509fb9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 4px;
+  margin-bottom: 12px;
+}
+
+.WhyChoose-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  filter: invert(1);
+  background-image: url("../images/user-experience.png");
+}
+
+.details {
+  background-color: #509fb9;
+  padding: 30px;
+  margin-bottom: 80px;
+}
+
+.details_content {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.details_content .heading {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.details_content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 64px;
+
+}
+
+.WhyChoose {
+  margin-bottom: 80px;
+}
+
+.accordion-body {
+  border-radius: 8px;
+  border-left: 4px solid #509fb9;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #509fb9;
+  box-shadow: unset;
+}
+
+button.accordion-button {
+  color: #509fb9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.back-btn a {
+  display: inline-block;
+  padding: 5px 26px;
+  border-radius: 4px;
+  margin: 0 0 20px;
+  line-height: 1;
+  background-color: #509fb9;
+  transition: all 0.2s ease-in-out;
+}
+.match-details{
+  margin-bottom: 90px;
 }
