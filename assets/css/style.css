@@ -4256,13 +4256,12 @@ li.team-member .match-team-logo img {
   justify-content: space-between;
   align-items: center;
 }
-
 .header_navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 70%;
 }
-
 .header_list {
   display: flex;
   justify-content: center;
@@ -4771,4 +4770,16 @@ button.accordion-button {
 }
 .match-details{
   margin-bottom: 90px;
+}
+
+.humburger_icon{
+  background-image: url("../images/humburger.png");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.humburger{
+  display: none;
 }

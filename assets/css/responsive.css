@@ -1,0 +1,42 @@
+@media (max-width:1200px){
+    .header_navbar {
+        width: 80%;
+      }
+}
+@media (max-width:1024px){
+    .header_list {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .humburger{
+        display: block;
+      }
+      
+    .header_navbar {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        gap: 16px;
+        top: 0;
+        z-index: 99;
+        padding: 16px;
+        right: 0;
+        transform: translateX(100%);
+        max-width: 430px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    .header_navbar.active {
+        right: 0;
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width:767px){
+    .leagues .leagues_lists .league_item{
+        width: 100%;
+    }
+}
