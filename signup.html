@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Singup</title>
+    <title>Homepage</title>
+    <!-- favicons link -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <!-- font awesome -->
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome  link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- font link -->
     <link href="assets/css/fonts/font.css" rel="stylesheet">
     <!-- bootsrape link -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <!-- bootstrape  link -->
+    <!-- bootstrape  icons link -->
     <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
-    <!-- vegas  link -->
-    <link href="assets/css/vegas.min.css" rel="stylesheet">
     <!-- css link -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- responsive css -->
@@ -28,38 +29,41 @@
 
 <body>
 
+<!-- header section -->
+<header class="header fixed-top">
+    <div class="container">
+        <div class="header_wrapper">
+            <div class="header_left">
+                <div class="header_logo">
+                    <a href="index.html" class="header_logoLnk">
+                        <div class="header_logoLnkIcon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="header_navbar">
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a href="/" class="header_link">Home</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="playing-guide.html" class="header_link">Playing Guide</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="leagues.html" class="header_link">Play Now</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#" class="header_link">About Us</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#" class="header_link">Contact Us</a>
+                    </li>
+                    <li class="close">
+                        <div class="close_img"></div>
+                    </li>
 
-    <!-- header section -->
-    <header class="header sticky-top">
-        <div class="container">
-            <div class="header_wrapper">
-                <div class="header_left">
-                    <div class="header_logo">
-                        <a href="/" class="header_logoLnk">
-                            <div class="header_logoLnkIcon">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="header_navbar">
-                    <ul class="header_list">
-                        <li class="header_item">
-                            <a href="/" class="header_link">Home</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="playing-guide.html" class="header_link">Playing Guide</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="leagues.html" class="header_link">Play Now</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">About Us</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+                </ul>
+
                 <div class="header_right">
                     <ul class="header_rightList">
                         <li class="">
@@ -117,8 +121,14 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="humburger">
+                <div class="humburger_icon"></div>
+            </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- singup  Page Form Section Start -->
     <section class="login_signup_form">
@@ -160,7 +170,65 @@
                                 Already have an account? <a href="login">Login</a>
                             </p>
                         </form>
+
+
+
+                        <div class="signup_inner">
+                            <div class="form-container">
+        
+                                <form class="php-email-form aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-delay="200">
+                                    <div class="row gy-4">
+        
+                                        <div class="col-md-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                                required="">
+                                        </div>
+        
+                                        <div class="col-md-6 ">
+                                            <input type="text" class="form-control" name="email" placeholder="Last Name"
+                                                required="">
+                                        </div>
+                                        <div class="col-md-6 ">
+                                            <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                                required="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Mobile Number"
+                                                required="">
+                                        </div>
+        
+
+                                       
+                                        <div class="col-md-6">
+                                            <input type="password" name="name" class="form-control" placeholder="Enter Password"
+                                                required="">
+                                        </div>
+        
+
+                                        <div class="col-12">
+                                            <input type="password" class="form-control" name="subject" placeholder="Confirm Password"
+                                                required="">
+                                        </div>
+        
+                                      
+        
+                                        <div class="col-12 text-center">
+                                            <div class="loading">Loading</div>
+                                            <div class="error-message"></div>
+                                            <div class="sent-message">Your message has been sent. Thank you!</div>
+        
+                                            <button type="submit" class="btn">Send Message</button>
+                                        </div>
+        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>

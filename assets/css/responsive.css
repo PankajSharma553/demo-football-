@@ -1,17 +1,19 @@
-@media (max-width:1200px){
+@media (max-width:1200px) {
     .header_navbar {
         width: 80%;
-      }
+    }
 }
-@media (max-width:1024px){
+
+@media (max-width:1024px) {
     .header_list {
         flex-direction: column;
         gap: 16px;
     }
-    .humburger{
+
+    .humburger {
         display: block;
-      }
-      
+    }
+
     .header_navbar {
         flex-direction: column;
         justify-content: start;
@@ -19,7 +21,7 @@
         background-color: black;
         position: fixed;
         height: 100%;
-        gap: 16px;
+        gap: 24px;
         top: 0;
         z-index: 99;
         padding: 16px;
@@ -29,14 +31,115 @@
         width: 100%;
         transition: 0.3s ease-in-out;
     }
+
     .header_navbar.active {
         right: 0;
         transform: translateX(0%);
     }
+
+    .close_img {
+        display: block;
+        filter: invert(1);
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px;
+    }
+
+    .site-footer {
+        padding-top: 80px;
+    }
+
+    .copyRight {
+        padding-top: 30px;
+    }
+    .my-matches .leagues_lists .league_item {
+        width: 49%;
+    }
 }
 
-@media (max-width:767px){
-    .leagues .leagues_lists .league_item{
+@media (max-width:991px){
+    .matches-detail .match-details-items .league_item {
+        width: 49%;
+    }
+    .team_viewinner .league_item {
+        width: 49%;
+    }
+    .match-details .match_detailsInner .league_item {
+        width: 49%;
+    }
+}
+@media (max-width:767px) {
+    .leagues .leagues_lists .league_item {
         width: 100%;
+    }
+    .match-details .match_detailsInner .league_item {
+        width: 100%;
+    }
+
+    .copyRight_wrapper {
+        justify-content: center;
+        text-align: center;
+        gap: 2px;
+    }
+
+    .copyRight_right p {
+        margin-bottom: 12px;
+    }
+
+    .site-footer {
+        padding-top: 60px;
+    }
+
+    .copyRight {
+        padding-top: 10px;
+    }
+    .matches-detail .match-details-items .league_item {
+        width: 100%;
+    }
+    .team_viewinner .league_item {
+        width: 100%;
+    }
+    .my-matches .leagues_lists .league_item {
+        width: 100%;
+    }
+ 
+}
+
+
+@media (max-width:480px) {
+    .signup-form {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .SignUp-btn,
+    .signup-input {
+        border-radius: 4px;
+    }
+
+    .header_navbar {
+        max-width: 100%;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .footer_list {
+        flex-direction: column;
+        gap: 8px !important;
+    }
+
+    .copyRight {
+        padding-top: 4px;
+    }
+    .matches-detail .toggle-target {
+        overflow-x: scroll;
+    }
+    .site-footer {
+        padding-top: 32px;
     }
 }
